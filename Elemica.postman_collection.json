@@ -1,0 +1,426 @@
+{
+	"info": {
+		"_postman_id": "3a975da6-4421-47e2-888e-5afc66c20da2",
+		"name": "Elemica",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CreateShipment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"SH_004\",\"weight\":1800, \"id\": 5}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9085/shipment/create/",
+					"host": [
+						"localhost"
+					],
+					"port": "9085",
+					"path": [
+						"shipment",
+						"create",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateTariff",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"TF_006\",\"rate\":20, \"discount\": 10}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9085/tariff/create/",
+					"host": [
+						"localhost"
+					],
+					"port": "9085",
+					"path": [
+						"tariff",
+						"create",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CreateVehicle",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"name\":\"VH_006\",\"weight\":2000}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9085/vehicle/create/",
+					"host": [
+						"localhost"
+					],
+					"port": "9085",
+					"path": [
+						"vehicle",
+						"create",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteShipment",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9085/shipment/delete/10",
+					"host": [
+						"localhost"
+					],
+					"port": "9085",
+					"path": [
+						"shipment",
+						"delete",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteTariff",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9085/tariff/delete/4",
+					"host": [
+						"localhost"
+					],
+					"port": "9085",
+					"path": [
+						"tariff",
+						"delete",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DeleteVehicle",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9085/vehicle/delete/5",
+					"host": [
+						"localhost"
+					],
+					"port": "9085",
+					"path": [
+						"vehicle",
+						"delete",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetShipments",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9085/shipments/",
+					"host": [
+						"localhost"
+					],
+					"port": "9085",
+					"path": [
+						"shipments",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetShipmentWithMaxCost",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9085/shipments/top/",
+					"host": [
+						"localhost"
+					],
+					"port": "9085",
+					"path": [
+						"shipments",
+						"top",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetTariffs",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9085/tariffs/",
+					"host": [
+						"localhost"
+					],
+					"port": "9085",
+					"path": [
+						"tariffs",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetVehicles",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9085/vehicles/",
+					"host": [
+						"localhost"
+					],
+					"port": "9085",
+					"path": [
+						"vehicles",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AssignVehicleToShipment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"shipmentName\":\"SH_009\",\"vehicleName\":\"VH_006\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9085/shipment/assign/vehicle",
+					"host": [
+						"localhost"
+					],
+					"port": "9085",
+					"path": [
+						"shipment",
+						"assign",
+						"vehicle"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddVehicleToTariff",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"tariffName\":\"TF_006\",\"vehicleName\":\"VH_008\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9085/tariff/add/",
+					"host": [
+						"localhost"
+					],
+					"port": "9085",
+					"path": [
+						"tariff",
+						"add",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddTariffToShipment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"shipmentName\":\"SH_007\",\"tariffName\":\"TF_006\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9085/shipment/assign/tariff/",
+					"host": [
+						"localhost"
+					],
+					"port": "9085",
+					"path": [
+						"shipment",
+						"assign",
+						"tariff",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AutoAssignTariffAndVehicle",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"shipmentName\":\"SH_010\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:9085/shipment/assign/auto/",
+					"host": [
+						"localhost"
+					],
+					"port": "9085",
+					"path": [
+						"shipment",
+						"assign",
+						"auto",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
